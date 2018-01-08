@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <title>Celeb Gif Searching</title>
+    <!-- jQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- Bootstrap CDN-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
+    <!-- Google Fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Fascinate" rel="stylesheet">
+
+  </head>
+
+  <body style="background-color: #E6E6FA;">
+    
+    <!-- Heading -->
+    <div class="container">
+      <div class="row">
+        <h1 class="display-2" style="font-family: 'Fascinate', cursive;">Celeb Gif Search</h1>
+      </div>
+
+    <!-- Buttons -->
+      <div class="row">
+        <!-- Movies will get dumped here -->
+        <div id="celebrities-view"></div>
+      </div>
+
+      <!-- Adding Buttons -->
+      <div class="row">
+        <form id="celeb-form">
+          <label for="celeb-input" style="font-family: 'Fascinate', cursive;">Add a Celeb to the List!</label>
+          <input type="text" id="celeb-input"><br>
+
+          <!-- Button triggers new movie to be added -->
+          <input class="btn-success" id="add-celeb" type="submit" value="Add a Celeb">
+        </form>
+      </div>
+
+      <!-- This is where the gifs where get added -->
+      <div class="row">
+        <div id="images"></div>
+      </div>
+    </div>
+    
+    <!-- link to javascript file -->
+    <script src="assets/script.js"></script>
+ 
+  </body>
+</html>
